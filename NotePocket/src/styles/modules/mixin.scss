@@ -1,0 +1,7 @@
+
+@mixin media-breakpoint-up ($resol){    
+    @media screen and (min-width: $resol ) { @content;}    
+}
+
+
+

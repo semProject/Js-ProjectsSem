@@ -1,0 +1,38 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  background: rgb(48, 52, 63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#app {
+  width: 60%;
+  height:70vh;
+  background: rgb(14, 71, 100);
+}
+
+@media screen and (max-width: 768px) {
+
+   #app {
+    background: rgb(24, 78, 139);
+    width: 100%;
+    height: 100%;
+  }
+}
+

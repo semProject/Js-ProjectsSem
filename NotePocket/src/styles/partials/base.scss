@@ -1,0 +1,59 @@
+body {
+  font-size: 62.5%;
+}
+
+.hero.is-fullheight .hero-body {
+  align-items: flex-start;
+  padding-top: 0.3rem;
+}
+#openNote{
+  margin: 1rem;
+}
+
+.icon {
+  position: relative;
+  z-index: 100;
+  font-size: 1.7rem;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  transform: translate(0%, -50%);
+  color: rgb(49, 49, 49);
+   background: rgb(255, 255, 255);
+   border-radius:50%;
+   &--rotate {
+     transform:translate(-65%, -50%) rotate(45deg);  
+     background: none;
+    }
+    &--rotatePined {
+      transform:translate(-65%, -50%) ; 
+      color:black ;    
+      background: none;
+    }  
+}
+.card {
+  &-header {
+    font-size: 1rem;
+    &-title {
+      padding: 0.5rem;
+    }  
+  }  
+  &-content {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    max-height: 24vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3rem;
+  }
+  &-footer {
+    font-size: 0.8rem;
+    &-item {
+      padding: 0.4rem;
+    }
+  }
+}
+.modal{
+  z-index: 99999;
+}
+

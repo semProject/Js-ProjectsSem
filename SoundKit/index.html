@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SoundKit</title>
+    <meta name="description" content="SoundKit" />    
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <button class="button button__play" id="play">
+            <i class="fas fa-play"></i>
+        </button>
+        <button class="button button__channel1" id="rec1">
+            <i class="fas fa-microphone"></i>
+            <span class="button__play--desc">Channel1</span>
+        </button>
+        <button class="button button__channel2" id="rec2">
+        <i class="fas fa-microphone"></i>
+        <span class="button__play--desc">Channel2</span>
+    </button>
+      <button class="button button__channel3" id="rec3">
+          <i class="fas fa-microphone"></i>
+          <span class="button__play--desc">Channel3</span>
+      </button>
+      <button class="button button__channel4" id="rec4">
+          <i class="fas fa-microphone"></i>
+        <span class="button__play--desc">Channel4</span>
+      </button>
+      
+      <div class="buttons-box">
+          <button class="button button__sound" id="">Boom
+            <audio src="sounds/boom.wav" id="boom"></audio>            
+        </button>
+        <button class="button button__sound" id="">Clap
+            <audio src="sounds/clap.wav" id="clap"></audio>            
+        </button>
+        <button class="button button__sound" id="">Hihat
+            <audio src="sounds/hihat.wav" id="hihat"></audio>            
+        </button>
+        <button class="button button__sound" id="">Kick
+            <audio src="sounds/kick.wav" id="kick"></audio>
+        </button>
+        <button class="button button__sound" id="">Openhat
+            <audio src="sounds/openhat.wav" id="openhat"></audio>
+        </button>
+        <button class="button button__sound" id="">Ride
+            <audio src="sounds/ride.wav" id="ride"></audio>
+        </button>
+        <button class="button button__sound" id="">Tink
+            <audio src="sounds/tink.wav" id="tink"></audio>            
+        </button>
+        <button class="button button__sound" id="">Snare
+                <audio src="sounds/snare.wav" id="snare"></audio>            
+        </button>
+        <button class="button button__sound" id="">Tom
+            <audio src="sounds/tom.wav" id="tom"></audio>
+        </button>
+    </div>        
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

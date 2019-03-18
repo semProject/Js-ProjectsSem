@@ -1,0 +1,55 @@
+
+body{
+  height: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.title{
+padding: 2rem;
+}
+
+#photo{
+  /* padding: 1rem; */
+  background-color: #080404;
+  height: 70vh;
+  width: 100%;
+}
+#controls{
+  padding: 1rem;
+  background-color: #080404;
+  height: 100%;
+}
+#colorPic{
+ margin-bottom: 0.5rem;
+ border-radius: 0.2rem;
+}
+
+.slider {
+  width: 100%;
+}
+#colorPic{
+  width: 100%;
+  background: rgb(63, 205, 31);
+  height: 2rem;
+}
+
+@media (max-width:768px){
+  .title{
+    padding: 1rem;
+    }
+  .hero-body{
+    padding-top: 1rem;
+    }
+  #photo{
+    height: 40vh !important;
+    width: 100%;
+  }
+  #controls{
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Graphic editor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <section class="hero is-info is-fullheight">
+      <div class="hero-head">
+        <div class="container">
+          <h1 class="title">
+            Graphic editor
+          </h1>
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column has-background-link is-8-tablet ">
+              <canvas id="photo"></canvas>
+            </div>
+            <div class="column has-background-warning is-4-tablet">
+              <div id="controls">
+                <label for="sd1">Opacity</label>
+                <input
+                  id="sd1"
+                  class="slider is-fullwidth"
+                  step="1"
+                  min="0"
+                  max="100"
+                  value="50"
+                  type="range"
+                  orient="vertical"
+                />
+                <label for="sd2">Contrast</label>
+                <input
+                  id="sd2"
+                  class="slider is-fullwidth"
+                  step="1"
+                  min="0"
+                  max="100"
+                  value="50"
+                  type="range"
+                  orient="vertical"
+                />
+                <label for="sd3">Invert</label>
+                <input
+                  id="sd3"
+                  class="slider is-fullwidth"
+                  step="1"
+                  min="0"
+                  max="100"
+                  value="50"
+                  type="range"
+                  orient="vertical"
+                />
+                <label for="sd4">Brightness</label>
+                <input
+                  id="sd4"
+                  class="slider is-fullwidth"
+                  step="1"
+                  min="0"
+                  max="100"
+                  value="50"
+                  type="range"
+                  orient="vertical"
+                />
+                <label for="sd1">colorPicker</label>
+                <div id="colorPic"></div>
+                <div class="buttons is-centered">
+                  <span class="button is-dark" id="buttonGray">Grayscale</span>
+                  <span class="button is-link" id="buttonReset">Reset</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

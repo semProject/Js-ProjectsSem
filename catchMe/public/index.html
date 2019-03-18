@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Catch Me</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+    <div class="container-fluid wrapper">
+        <div class="jumbotron my-1 p-2" id="map">
+          </div>
+        <div class="jumbotron my-1 p-2 " id="postsBox">
+          <ul class="list-group" id="posts">
+              <li class="list-group-item">Cras justo odio</li>
+            </ul>
+          </div>
+      <form id="form">
+        <div class="input-group mb-3">
+          <input
+          id="message"
+            type="text"
+            class="form-control"
+            placeholder="Type message..."
+            aria-label="Type message..."
+            aria-describedby="buttonMessage"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button" id="buttonMessage">
+              Send message
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARkS-dsh-7IirtcQg3oSZEHudV6Uw9Iic&callback"
+    defer ></script>
+    <body>
+      <script  src="/socket.io/socket.io.js"></script>
+    <script  src="app.js" type="module"></script>
+  </body>
+</html>
