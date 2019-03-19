@@ -1,6 +1,6 @@
 # Js-ProjectsSem
 
-### Run [-SoundKit-](https://semProject.github.io/Js-ProjectsSem/SoundKit/index.html)-;
+### Run [-SoundKit-](https://semproject.github.io/Js-ProjectsSem/SoundKit/index.html)-;
 semProject/Js-ProjectsSem
 To build this project i use:
 - JavaScript es6
@@ -19,7 +19,7 @@ To build this project i use:
 To build this project i use:
 - JavaScript es6
 
-### Run [-CatchMe-](https://semProject.github.io/Js-ProjectsSem/catchMe/index.html)-;
+### Run [-CatchMe-](https://semproject.github.io/Js-ProjectsSem/catchMe/public/index.html)-;
 
 To build this project i use:
 - JavaScript es6
