@@ -1,6 +1,3 @@
-// import axios from 'axios';
-
-
 export const getLocation = new Promise((resolve, rejects) => {
   if (!navigator.geolocation) {
     console.warn(">Geolocation is not supported by your browser");
@@ -30,8 +27,8 @@ export const getLocation = new Promise((resolve, rejects) => {
   }
 
   function error() {
-    resolve(data);
-    // resolve(ipGeoLoc());
+    resolve(ipGeoLoc());
+    //resolve(data);
     // rejects();
   }
   console.log('fuck1Out');
