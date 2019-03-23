@@ -3,7 +3,10 @@ import { players, addUser, userID } from "../app.js";
 import { SetMarker, centerMap } from "./mapGoG.js";
 
 let dialBox = document.getElementById("posts");
+
+// uncoment in localhost
 //let socket = io.connect("http://localhost:4000");
+// uncoment web
 let socket = io.connect('https://marker-race.herokuapp.com/', {secure: true});
 
 // ---  emit event -----------

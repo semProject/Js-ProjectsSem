@@ -8,7 +8,7 @@
 
 ### Run [-BallInTheHolle-](https://semProject.github.io/Js-ProjectsSem/BallInTheHolle/index.html)-;
 
-### Run [-CatchMe-](https://semproject.github.io/Js-ProjectsSem/catchMe/public/index.html)-;
+### Run [-CatchMe-](https://marker-race.herokuapp.com/)-;
 + miałem problem z polaczeniem sie z websocketem(prawdopodobnie cos u mnie z konfiguracja), dlatego uzylem sevrera express.js i socket.io.
 + run script: npm run start.
 + localhost na porcie: 4000.
