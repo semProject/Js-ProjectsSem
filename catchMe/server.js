@@ -20,9 +20,6 @@ let server = app.listen(port,function(){
 //socket setup
 let io = socket(server)
 
-// io.set("transports", ["xhr-polling"]);
-// io.set("polling duration", 10);
-
 io.on('connection',(socket)=>{
 	console.log('Socket Connected !!!',socket.id )
 	//emit data everywhere

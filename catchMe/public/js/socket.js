@@ -3,7 +3,8 @@ import { players, addUser, userID } from "../app.js";
 import { SetMarker, centerMap } from "./mapGoG.js";
 
 let dialBox = document.getElementById("posts");
-let socket = io.connect("http://localhost:4000");
+//let socket = io.connect("http://localhost:4000");
+let socket = io.connect('https://marker-race.herokuapp.com/', {secure: true});
 
 // ---  emit event -----------
 export function emitEvent(payload, type, playerID) {
