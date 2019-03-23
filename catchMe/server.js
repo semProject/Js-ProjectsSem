@@ -1,24 +1,27 @@
-var express = require('express');
-// const bodyParser = require("body-parser");
-// var path = require("path");
-var socket = require('socket.io')
+const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+let socket = require('socket.io')
 
-var port = process.env.PORT || 4000;
+const port = process.env.PORT || 80;
 
 //app setup
-var app = express();
-// app.use(bodyParser.json());
+const app = express();
+app.use(cors());
 
-var server = app.listen(port,function(){
-	console.log(`Connected port: ${port}`)
+//Middleware
+app.use(bodyParser.json());
+app.use(express.static('public'))
+
+let server = app.listen(port,function(){
+	console.log(`Connected PORT: ${port}`)
 });
 
-// Static folder
-app.use(express.static('public'))
-// app.use(express.static(__dirname + '/public/'));
-
 //socket setup
-var io = socket(server)
+let io = socket(server)
+
+// io.set("transports", ["xhr-polling"]);
+// io.set("polling duration", 10);
 
 io.on('connection',(socket)=>{
 	console.log('Socket Connected !!!',socket.id )
