@@ -10,6 +10,7 @@
 
 ### Run [-CatchMe-](https://marker-race.herokuapp.com/)-;
 + miałem problem z polaczeniem sie z websocketem(prawdopodobnie cos u mnie z konfiguracja), dlatego uzylem sevrera express.js i socket.io.
-+ run script: npm run start.
 + localhost na porcie: 4000.
++ change adress in socket.js
++ run script: npm run start.
 
