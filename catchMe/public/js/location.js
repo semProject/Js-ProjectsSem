@@ -1,3 +1,4 @@
+
 export const getLocation = new Promise((resolve, rejects) => {
   if (!navigator.geolocation) {
     console.warn(">Geolocation is not supported by your browser");
@@ -20,7 +21,6 @@ export const getLocation = new Promise((resolve, rejects) => {
   //Wait for cords
   async function success(pos) {
     const crd = await pos.coords;
-    console.log('fuck1IN');
     data.lat = crd.latitude;
     data.lng = crd.longitude;
     resolve(data);
@@ -28,10 +28,9 @@ export const getLocation = new Promise((resolve, rejects) => {
 
   function error() {
     resolve(ipGeoLoc());
-    //resolve(data);
+    //  resolve(data);
     // rejects();
   }
-  console.log('fuck1Out');
 });
 
 async function ipGeoLoc(){

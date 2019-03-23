@@ -1,9 +1,8 @@
 import { styledMapType } from "./mapStyle.js";
 
-let map, marker, infoWindow;
+let map;
 
 export function initMap(cords) {
-    // console.log(cords);
     let lat = parseFloat(cords.lat || cords.latitude);
     let lng = parseFloat(cords.lng || cords.longitude);
     let position = new google.maps.LatLng(lat, lng);
@@ -14,8 +13,7 @@ export function initMap(cords) {
       disableDefaultUI: true,
       scrollwheel: false,
       zoom: 5,
-      // minZoom: 8
-      // map.setCenter(posLL)
+      minZoom: 8
     });
     map.mapTypes.set("styled_map", styledMapType);
     map.setMapTypeId("styled_map");
@@ -24,24 +22,17 @@ export function initMap(cords) {
     console.log('fuckYe22')
   }
 
- export function SetMarker(userId , cords,marker) {
-//  export function SetMarker(user) {
+export function SetMarker(userId , cords,marker) {
+  let lat = parseFloat(cords.lat || cords.latitude);
+  let lng = parseFloat(cords.lng || cords.longitude);
 
-  // let { userID, userPos,marker } = user;
-    let lat = parseFloat(cords.lat || cords.latitude);
-    let lng = parseFloat(cords.lng || cords.longitude);
-    // let lat = parseFloat(userPos.lat || userPos.latitude);
-    // let lng = parseFloat(userPos.lng || userPos.longitude);
-    // var iconBase = 'https://maps.google.com/mapfiles/kml/paddle/';
-    console.log('fuckYe333')
     // //Remove previous Marker.
     if (marker != null) {
       marker.setMap(null);
     }
     //Set Marker on Map.
     let myLatlng = new google.maps.LatLng(lat, lng);
-    // map.setCenter(myLatlng)
-   return marker = new google.maps.Marker({
+    return marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
       // icon: iconBase + '1.png'
@@ -49,6 +40,13 @@ export function initMap(cords) {
         fontWeight: 'bold',
         fontSize: '14px',
         text:`P${userId}`,
-    }
+      }
     });
+  }
+
+ export function centerMap(cords){
+    let lat = parseFloat(cords.lat || cords.latitude);
+    let lng = parseFloat(cords.lng || cords.longitude);
+    let myLatlng = new google.maps.LatLng(lat, lng);
+    map.setCenter(myLatlng)
   }

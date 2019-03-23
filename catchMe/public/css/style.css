@@ -19,14 +19,14 @@ body{
 
 #map{
   flex: 4;
-  /* width: 100% !important;
-  height: 100%; */
 }
 #postsBox{
   flex: 2;
   overflow-y: auto
 }
-#form{
+.post{
+  white-space: wrap;
+  word-wrap:break-word;
 }
 
 
