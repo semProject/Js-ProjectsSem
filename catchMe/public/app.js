@@ -10,8 +10,10 @@ export const players = [];
 export let userID;
 
 //--- Add event listeners ---
-sendBtn.addEventListener("click", sendMessage);
-window.addEventListener("keyup",  onKeyPress);
+try{
+  sendBtn.addEventListener("click", sendMessage);
+  window.addEventListener("keyup",  onKeyPress);
+}catch(err){}
 
 // -- main function --
 function main() {

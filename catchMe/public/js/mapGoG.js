@@ -19,7 +19,6 @@ export function initMap(cords) {
     map.setMapTypeId("styled_map");
 
     map.setCenter(position)
-    console.log('fuckYe22')
   }
 
 export function SetMarker(userId , cords,marker) {
